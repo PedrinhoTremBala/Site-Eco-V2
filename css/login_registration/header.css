@@ -1,0 +1,41 @@
+:root {
+  --verde-claro: #d4f5e9;
+  --verde-menta: #b0ffe2;
+  --verde-medio: #3CB371;
+  --verde-escuro: #2a6b43;
+  --verde-profundo: #1f3d2f;
+}
+
+
+#login_header {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to right, var(--verde-claro), var(--verde-menta));
+  display: flex;
+  justify-content:none;
+  align-items: center;
+  border-bottom: 3px solid var(--verde-escuro);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+#login_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--verde-profundo);
+  transition: color 0.3s ease;
+}
+
+#login_logo:hover {
+  color: var(--verde-escuro);
+}
+
+#login_logo img {
+  height: 45px;
+  width: auto;
+}

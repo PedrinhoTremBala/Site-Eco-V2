@@ -1,0 +1,712 @@
+style
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Goulart">
+    <meta name="description" content="Bookstore, livros de A a Z">
+    <meta name="keywords" content="livros, editora, escritor">
+    <title>EcoBloom</title>
+    <link rel="shortcut icon" href="./img/icon/logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home_page/header.css">
+    <link rel="stylesheet" href="./css/home_page/presentation.css">
+    <link rel="stylesheet" href="./css/home_page/nav_categories.css">
+    <link rel="stylesheet" href="./css/home_page/slider_multiple_items.css">
+    <link rel="stylesheet" href="./css/home_page/who_we_are.css">
+    <link rel="stylesheet" href="./css/home_page/localization.css">
+    <link rel="stylesheet" href="./css/home_page/download.css">
+    <link rel="stylesheet" href="./css/home_page/footer.css">
+    <link rel="stylesheet" href="./css/styles_global.css">
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+    <header id="header">
+        <a id="logo" href="./index.html">
+            <img src="./img/icon/logo1.png" alt="Ícone da loja">
+            <span>EcoBloom</span>
+        </a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn_mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#nav_categories">Categorias</a></li>
+                <li><a href="#slider_multiple_items">Produtos</a></li>
+                <li><a href="#localization">Localização</a></li>
+            </ul>
+        </nav>
+        <div id="search_entry">
+            <input class="input" type="text" placeholder="Pesquise Produtos" pattern=".+" required />
+            <button class="submit_lente" type="submit">
+                <img src="./img/icon/lupa.svg" alt="ícone de lupa">
+            </button>
+        </div>
+        <div id="icones_header">
+            <a href="./login_and_register.html">
+                <div id="user_login">
+                    <img src="./img/icon/boneco.png" alt="Ícone de login da conta">
+                    <span>olá, faça seu login ou cadastra-se</span>
+                </div>
+            </a>
+            <div id="heart_icon">
+                <img src="./img/icon/coracao2.png" alt="Ícone dos favoritos">
+            </div>
+            <div id="shopping_cart">
+                <a href="/Carrinho/carrinho.html" target="_blank">
+                    <img src="./img/icon/carrinho.png" alt="Ícone de carrinho de compra">
+                </a>
+                <span>R$ 0,00</span>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="presentation" class="presentation-section">
+        <div class="img-container">
+            <img src="./img/icon/Imagem2.jfif" alt="Ilustração dos produtos">
+        </div>
+        <div class="text-container">
+            <h1>Melhores Produtos</h1>
+            <p>Na EcoBloom você encontra produtos naturais para todos os gostos. Uma grande variedade, qualidade
+                garantida e preços acessíveis.</p>
+            <a href="#slider_multiple_items1" class="cta-button">Veja nossos produtos mais vendidos</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <nav id="nav_categories">
+        <div class="nav_title">
+            <h1>CATEGORIAS</h1>
+        </div>
+        <ul id="menu_categories">
+            <div class="menu_group">
+                <li><a href="/">Creme</a></li>
+                <li><a href="/">Maquiagem</a> </li>
+                <li><a href="/">Hidratante</a></li>
+            </div>
+            <div class="menu_group">
+                <li><a href="/">Shampoo</a></li>
+                <li><a href="/">Perfume</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Outros <img src="./img/icon/tri.png" alt="triângulo" width="10" height="10">
+                    </button>
+                    <div class="dropdown_content">
+                        <a href="#">Sabonete</a>
+                        <a href="#">Delineador</a>
+                        <a href="#">Gloss</a>
+                        <a href="#">Protetor solar</a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div id="slider_multiple_items">
+        <div class="carousel_container general_formatting">
+            <div class="carousel_inner">
+                <div class="track">
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/creme.jpg" alt="produto1">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 34,90</span>
+                                <span class="price">R$ 29,90</span>
+                                <span class="booksTitle">CREME HIDRATANDE DE PELE</span>
+                                <span class="author">Edição eco cremes</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index3.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/sabonete.jpg" alt="produto2">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 16,90</span>
+                                <span class="booksTitle">SABONETE EM BARRA</span>
+                                <span class="author">O melhor para sua pele</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index4.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <a href="" onclick="adicionarAoCarrinho()">
+                                    <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                        alt="Icone de Carrinho de compra">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function adicionarAoCarrinho() {
+
+                            const item = {
+                                nome: 'SABONETE EM BARRA',
+                                preco: 'R$ 16,90',
+                                imagem: 'img/icon/sabonete.jpg'
+                            };
+
+                            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+
+                            carrinho.push(item);
+
+                            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+                            mostrarToast('Item adicionado ao carrinho!');
+                            mostrarMensagemAdicionado();
+                        }
+
+                        function mostrarToast(mensagem) {
+                            const toast = document.createElement('div');
+                            toast.classList.add('toast');
+                            toast.innerText = mensagem;
+                            document.body.appendChild(toast);
+
+                            setTimeout(() => {
+                                toast.remove();
+                            }, 3000);
+                        }
+
+                        function mostrarMensagemAdicionado() {
+                            const msg = document.getElementById('adicionado-msg');
+                            msg.style.display = 'block';
+                            setTimeout(() => {
+                                msg.style.display = 'none';
+                            }, 3000);
+                        }
+                    </script>
+                    </script>
+
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/solar.jpg" alt="produto3">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 38,90</span>
+                                <span class="booksTitle">PROTETOR SOLAR</span>
+                                <span class="author">Protege até 10x mais</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index5.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/coco.jpg" alt="produto4">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 40,90</span>
+                                <span class="booksTitle">OLÉO DE COCO</span>
+                                <span class="author">Para deixar sua pele oléosa</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index6.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/rolon.jpg" alt="produto5">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 14,90</span>
+                                <span class="booksTitle">ANTISTRANSPIRANTE ROLL OMN</span>
+                                <span class="author">Desodorante 72 horas</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index7.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/delineador.jpg" alt="produto6">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 29,90</span>
+                                <span class="price">R$ 24,90</span>
+                                <span class="booksTitle">DELINEADOR</span>
+                                <span class="author">Novo delineador da nossa linha</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index8.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/shampoo.jpg" alt="produto7">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 64,90</span>
+                                <span class="price">R$ 55,90</span>
+                                <span class="booksTitle">SHAMPOO</span>
+                                <span class="author">Acaba com a caspo, mata 99% das bacterias e limpa o couro
+                                    cabeludo</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index9.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/sliquido.jpg" alt="produto8">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 54,90</span>
+                                <span class="price">R$ 42,90</span>
+                                <span class="booksTitle">SABONETE LIQUIDO</span>
+                                <span class="author">Ótimo para manter suas maos limpas e hidratadas</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index10.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev">
+                    <img src="./img/icon/left_arrow_icon.svg" alt="ícone de seta para o lado  direito">
+                </button>
+                <button class="next">
+                    <img src="./img/icon/right_arrow_icon.svg" alt="ícone de seta para o lado  esquerdo">
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr class="linha">
+    <div id="slider_multiple_items1">
+        <h1>Mais Populares</h1>
+        <div class="carousel_container carousel_container1">
+            <div class="carousel_inner">
+                <div class="track track1">
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/blush.jpg" alt="produto9">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 44,90</span>
+                                <span class="booksTitle">BLUSH</span>
+                                <span class="author">Fique linda e cheirosa</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index11.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/perfume.jpg" alt="produto10">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 39,90</span>
+                                <span class="price">R$ 32,90</span>
+                                <span class="booksTitle">PERFUME</span>
+                                <span class="author">Nova fragrancia da nossa linha, fique cheiroso(a) com a
+                                    gente</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index12.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/gloss.jpg" alt="produto11">
+                            </div>
+                            <div class="info">
+                                <span class="price">R$ 19,90</span>
+                                <span class="booksTitle">GLOSS</span>
+                                <span class="author">Mantenha-se com os labios umidos e saborosos</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index13.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/minoxidil.jpg" alt="produto12">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 29,90</span>
+                                <span class="price">R$ 25,90</span>
+                                <span class="booksTitle">MINÓXIDIL</span>
+                                <span class="author">Sua calviçe ira embora, basta aplicar na area e esperar</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index14.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/desodorante.jpg" alt="produto13">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 39,90</span>
+                                <span class="price">R$ 31,90</span>
+                                <span class="booksTitle">DESODORANTE</span>
+                                <span class="author">O Desodorante da Ecobloom dura mais de 72 horas, não te
+                                    abandona</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index15.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/mascara.jpg" alt="produto14">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 43,90</span>
+                                <span class="booksTitle">MASCARA FACIAL</span>
+                                <span class="author">Deixe sua pele macia e sem cravos</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index16.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/base.jpg" alt="produto15">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 69,90</span>
+                                <span class="price">R$ 59,90</span>
+                                <span class="booksTitle">BASE LIQUIDA</span>
+                                <span class="author">Base impermeavel 48horas</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index17.html" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_container">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/icon/baton.jpg" alt="produto16">
+                            </div>
+                            <div class="info">
+                                <span class="old_price">R$ 49,90</span>
+                                <span class="price">R$ 37,90</span>
+                                <span class="booksTitle">BATOM</span>
+                                <span class="author">Deixe seus lábios lindos e vermelhos com nosso batom</span>
+                            </div>
+                            <div class="card-produto">
+                                <form action="Saiba mais/index18" target="_blank">
+                                    <input type="submit" value="Saiba mais" class="saiba-mais-btn">
+                                </form>
+                            </div>
+                            <div class="footerCard">
+                                <a href="/TelaPagamento/index2.html">COMPRAR</a>
+                                <img class="fav" src="./img/icon/coracao2.png" width="40px" height="38px"
+                                    alt="Icone de adicionar aos favoritos">
+                                <img class="shopping_cart_icon" src="./img/icon/carrinho.png" width="45px"
+                                    alt="Icone de Carrinho de compra">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev prev1">
+                    <img src="./img/icon/left_arrow_icon.svg" alt="ícone de seta para o lado  direito">
+                </button>
+                <button class="next next1">
+                    <img src="./img/icon/right_arrow_icon.svg" alt="ícone de seta para o lado  esquerdo">
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr class="linha">
+    <section id="who_we_are" class="general_formatting">
+        <h1>Quem nós somos</h1>
+        <p>
+            Em um mundo cada vez mais consciente da importância de cuidar do meio ambiente, nasce a
+            EcoBloom: uma marca de cosméticos inovadora, que une a beleza natural dos produtos com o
+            compromisso de sustentabilidade. Criada por um time apaixonado pela ideia de transformar a
+            rotina de cuidados em um ato de respeito ao planeta, a EcoBloom oferece produtos de alta
+            qualidade em embalagens 100% recicláveis. Acreditamos que a verdadeira beleza começa com
+            a harmonia entre a natureza e o cuidado que oferecemos a nós mesmos. Com a EcoBloom, cada
+            escolha que você faz não só embeleza, mas também contribui para um mundo mais verde e
+            responsável. Junte-se a nós nesta jornada, onde cada flor que desabrocha simboliza um futuro
+            mais sustentável para todos!
+        </p>
+    </section>
+    <hr class="linha">
+    <h1 class="loc">Nossa Localização</h1>
+    <section id="localization" class="general_formatting">
+        <iframe class="map_frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.560275068452!2d-46.89235592544838!3d-23.51234287883354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03e63bc7a06d%3A0xc14462a7d6d04032!2sITB%20Bras%C3%ADlio%20Flores%20de%20Azevedo%20(FIEB)!5e0!3m2!1spt-BR!2sbr!4v1754166587221!5m2!1spt-BR!2sbr"
+            width="800" height="600" allowfullscreen=""></iframe>
+    </section>
+    <hr class="linha">
+    <div id="download">
+        <div id="img_dowload">
+            <img src="./img/icon/bonecocelular.png" alt="smartphone">
+        </div>
+        <div id="download_presentation">
+            <h1>Baixe o aplicativo para desfrutar mais!</h1>
+            <div id="text_dowload">
+                <p>Simples e fácil de baixar o aplixativo, ocupa pouco espaço na memória do seu Smartphone.</p>
+                <p>Pelo Google, você pode fazer o download</p>
+                <ol>
+                    <li>Basta abrir o nosso web site no navegador</li>
+                    <li>Tocar no ícone de três pontos </li>
+                    <li>Selecionar "Instalar aplicativo"</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <hr>
+        </div>
+        <div id="text_footer">
+            <div id="div_msg">
+                <div id="img_footer">
+                    <p>EcoBloom</p>
+                </div>
+                <p>
+                <h1>Nosso produtos são baratos como nunca e cheirosos como sempre!</h1>
+                </p>
+                <p>agradeçemos por escolher a EcoBloom como sua marca numero 1 de produtos cosméticos</p>
+            </div>
+            <div class="links_footer">
+                <h1> Links Rápidos</h1>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Serviços</a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Projetos</a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Nosso
+                            time</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links_footer">
+                <h1>Links Rápidos</h1>
+                <ul>
+                    <li><a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita"> Contate
+                            - Nos</a></li>
+                    <li><a href="/">
+                            <img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Blog</a>
+                    </li>
+                    <li><a href="/"><img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Nossa localização</a></li>
+                    <li><a href="/"><img src="./img/icon/angle-double-right.svg" alt="Ícone de dupla seta para direita">
+                            Entrega</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="social_networks">
+            <img src="./img/icon/icon_youtube.svg" alt="Ícone do youtube">
+            <img src="./img/icon/icon_instagram.svg" alt="Ícone do instragram">
+            <img src="./img/icon/icon_facebook.svg" alt="Ícone do facebook">
+            <img src="./img/icon/icon_twitter.svg" alt="Ícone do twitter">
+        </div>
+        <div id="copyright">
+            <div>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/header.js"></script>
+    <script src="./js/slider_multiple_items.js"></script>
+
+</body>
+
+</html>
